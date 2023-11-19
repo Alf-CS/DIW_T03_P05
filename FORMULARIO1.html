@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="HTML5">
+		<meta name="author" content="Alfonso Cortés">
+		
+		<title>Práctica 5 - Formulario 1</title>
+		
+		
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+
+	<body>
+
+
+		<div class="formulario">
+		<label class="titulo">Formulario de alta</label>
+			<div class="wrapper">
+			  <div class="grupo">
+				<label class="labelGrupo" for="nombreApellidos">Nombre y apellidos (*)</label>
+				<div class="campos">
+				  <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+				  <label class="labelCampo" for="nombre">Nombre</label>
+				  <input type="text" id="apellido1" name="apellido1" placeholder="Primer apellido">
+				  <label class="labelCampo" for="nombre">Primer apellido</label>
+				  <input type="text" id="apellido2" name="apellido2" placeholder="Segundo apellido">
+				  <label class="labelCampo" for="nombre">Segundo apellido</label>
+				</div>
+			  </div>
+
+			  <div class="grupo">
+				<label for="direccion">Dirección:</label>
+				<div class="campos">
+				  <input type="text" id="calle" name="calle" placeholder="Calle">
+				  <input type="text" id="codigoPostal" name="codigoPostal" placeholder="Código postal" maxlength="5">
+				  <input type="text" id="municipio" name="municipio" placeholder="Municipio">
+				  <select id="provincia" name="provincia">
+					<option value="" disabled selected>Seleccione provincia</option>
+					<!-- Aquí hay que poner las provincias -->
+					<option value="Alava">Álava</option>
+					<option value="Alicante">Alicante</option>
+					<option value="Barcelona">Barcelona</option>
+				  </select>
+				  <select id="pais" name="pais">
+					<option value="" disabled selected>Seleccione país</option>
+					<!-- Aquí habría que poner los países que querramos -->
+					<option value="España">España</option>
+					<option value="Andorra">Andorra</option>
+					<option value="Portugal">Portugal</option>
+				  </select>
+				</div>
+			  </div>
+
+			  <div class="grupo">
+				<label for="email">Email:</label>
+				<div class="campos">
+				  <input type="email" id="email" name="email" placeholder="Correo electrónico">
+				</div>
+			  </div>
+
+			  <div class="grupo">
+				<label for="telefono">Teléfono:</label>
+				<div class="campos">
+				  <input type="tel" id="telefonoFijo" name="telefonoFijo" placeholder="Teléfono fijo" maxlength="9">
+				  <input type="tel" id="telefonoMovil" name="telefonoMovil" placeholder="Teléfono móvil" maxlength="9">
+				</div>
+			  </div>
+			</div>
+		  <button class="btn-submit">Darme de alta -></button>
+		</div>
+
+
+		<footer>
+			<a class="enlace" href="columnas5.html"> Enlace a Github</a> 
+		</footer>
+
+	</body>
+
+
+</html>
